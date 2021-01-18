@@ -7,13 +7,21 @@
   
   <img width="941" alt="orange" src="https://user-images.githubusercontent.com/76178081/104917562-93e4cf80-59b9-11eb-91f3-c8f0b7ef8ce9.PNG">
    
-   The error is regarding the syntax i.e the single quotation mark of the string
+   If we look closely we can observe that there is a bracket after okay in the syntax of th ERROR statement.
+   This implies that the input is enclosed in parenthesis ()
    
-   I try to comment it out but still recieve an error regarding syntax used: ?id=okay' --+
    
-   over here we can use the addslash payload that prevents backlash
-   ?id=1′) –+
-   ?id=1''OR 1=1 --+
+   
+   
+    We can use  ?id=1′) –-+
+   As mentioned earlier the input is inside the parenthesis and normally commenting it
+   (+ sign is used to add space or a substitue of space in the URL)
+   
+   
+   SELECT Login name, Your Password FROM Tablename WHERE id=(our input should be inserted here);
+   
+   
+   
    
    
 
