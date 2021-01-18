@@ -1,3 +1,3 @@
 Initially i did have a minor error in setting up the database schema after logging in to the main page of SQLi-labs but that was due to the different php version i was using.
 I was using php version 7.2 but as soon as i used the appropriate link to the corresponding version it instantly started working.
-i was able to set up XAMPP, MysQL and Apache locally.
+i was able to set up XAMPP, MysQL and Apache .
