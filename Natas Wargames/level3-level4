@@ -1,0 +1,8 @@
+When we first login we see that 
+Access disallowed. You are visiting from "" while authorized users should come only from "http://natas5.natas.labs.overthewire.org/"
+So we are only allowed access if we login as Natas5
+The referer header allows us to view where people are logging in from
+So, after installing Burp Suite we can change the referer from natas4 to natas5 and we will get the password!
+
+natas5: iX6IOfmpN7AYOQGPwtn3fXpbaJVJcHfq
+
