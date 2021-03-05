@@ -1,0 +1,32 @@
+After logging in to Natas6 we can see a blank space given for us to enter a 'secret' and a submit button.
+AN option is given to check the source code.
+
+
+include "includes/secret.inc";
+
+    if(array_key_exists("submit", $_POST)) {
+        if($secret == $_POST['secret']) {
+        print "Access granted. The password for natas7 is <censored>";
+    } else {
+        print "Wrong secret";
+    }
+    }
+?>
+
+<form method=post>
+Input secret: <input name=secret><br>
+<input type=submit name=submit>
+</form>
+
+This is the source code.
+
+Over we can see that the program gives us the password for Natas7 if the secret we enter matches their secret else 'Wrong Secret' will be printed.
+ANother hint is that it tells us to include a file in the URL that might contain the secret
+
+Upon doing so we get
+<?
+$secret = "FOEIUWGHFEEUHOFUOIU";
+?>
+After submitting this on the main page of Natas6 we get the credentials for Natas7
+
+Access granted. The password for natas7 is 7z3hEENjQtflzgnT29q7wAvMNfZdh0i9
