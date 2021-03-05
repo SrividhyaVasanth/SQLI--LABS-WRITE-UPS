@@ -1,0 +1,9 @@
+On logging in to Natas7 we see 'Home page' written and  button 'HOme page'
+on clicking the button 'THis is home page' is printed on the page.
+When we check the source code we get a hint
+hint: password for webuser natas8 is in /etc/natas_webpass/natas8 -->
+WE type this in the URL
+http://natas7.natas.labs.overthewire.org/index.php?page=/etc/natas_webpass/natas8
+
+and we get the password for Natas8 
+DBfUBfqQG69KvJvJ1iAbMoIpwSNQ9bWe
