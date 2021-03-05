@@ -1,0 +1,14 @@
+After logging in we can see "There is nothing on this page"
+After checking the page source by ctrl+U we can see a maessage 
+
+No more information leaks!! Not even Google will find it this time...
+
+The hint is related to search engines so we can probably try with robots.txt in the URL
+User-agent: *
+Disallow: /s3cr3t/
+
+after using the second option in the URL we get 
+Index of /s3cr3t
+
+IN the file user.txt we can find the password for natas4
+natas4:Z9tkRkWmpt9Qr7XrR5jWRkgOU901swEZ
