@@ -1,1 +1,14 @@
-We can view th page source and fns the password over there.
+"There is Nothing on this page " Can be seen after logging in
+We check the page source and after inspecting you can see an img source=files/pixel.png
+If we type this in the URL 'files' we are redirected to a parent Directory.
+
+After clciking on the users.txt option we can view the password.
+
+# username:password
+alice:BYNdCesZqW
+bob:jw2ueICLvT
+charlie:G5vCxkVV3m
+natas3:sJIJNW6ucpu6HPZ1ZAchaDtwd7oGrD14
+eve:zo4mJWyNj2
+mallory:9urtcpzBmH
+
