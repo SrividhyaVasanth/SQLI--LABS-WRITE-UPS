@@ -1,0 +1,8 @@
+Again when we login we can see on the page "Access disallowed.You are not logged in"
+FOr logging in we need to type in our credentials but we can't access that page.
+Another way to login to a web site is through cookies.
+If we check cookies we can see a cookie named 'loggedin' with it's value set to 0
+The booloean value for 0 is False and hence for the value of the cookie to be 'true' we set it as 1 ,save it and refresh the page
+After refreshing the page we can view th password for natas6
+
+Access granted. The password for natas6 is aGoY4q2Dc6MgDq4oL4YtoKtyAg9PeHa1
