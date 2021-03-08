@@ -1,0 +1,12 @@
+when we login we can see we that we can upload a JPEG file that is maximum 1KB.
+a 10 character string is generated from getransomstring(): as seen in the source code.
+'MAX_FILE_SIZE=1000':from source code
+a string is generated and then we can upload a .jpg file
+THere is no specialized securiy for the .jpg file i.e an error only occurs if we don't upload other than that nothing gives us an error.
+
+we create a html file where we change the .jpg to .php
+and we create another .php file with the location of natas13 i.e (cat /etc/natas_password/natas13)
+we upload the html on the browser and choose the php file to be uploaded and click enter
+jmLTY0qiPZBbaKc9341cqPQZBJv7MQbY
+
+
