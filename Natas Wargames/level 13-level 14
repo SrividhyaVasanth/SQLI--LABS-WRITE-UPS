@@ -4,8 +4,11 @@ we capture the request on burpsuite proxy
 Like the previous challenge we can change the .jpg to php and upload a php file 
 <?php echo passthru("cat /etc/natas_webpass/natas14")?>
 to get a password.
-BUt it doesn't work and the repeater request on burpsuite shows that the file is being uploaded but is not being accepted due to the .php extension
-It refuses the file by identifying the header of the image
+BUt it doesn't work and the repeater request on burpsuite shows that the file is being uploaded and accepted.
+
+When we view the file we can gibberish text.
+
+JFIF��C
 
 So we keep the header of the image on the request of bursuite and upload the php file at the end of the request.
 WE send the request and recieve the password.
