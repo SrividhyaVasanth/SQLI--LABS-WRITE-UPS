@@ -10,6 +10,9 @@ When we view the file we can gibberish text.
 
 JFIF��C
 
-So we keep the header of the image on the request of bursuite and upload the php file at the end of the request.
+So we keep the header of the image on the request of bursuite and upload the php file in the middle of the image.
+
+This way we are tricking the file uploader that its an image by inserting the php request in between the image file..
+cause it only checks the header and footer of the image.
 WE send the request and recieve the password.
 Lg96M10TdfaPyVBkJdjymbllQ5L6qdl1--natas14
