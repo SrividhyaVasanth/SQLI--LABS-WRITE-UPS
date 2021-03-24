@@ -9,6 +9,7 @@ so maximum value of phpsessionid is 640 and the corresponding value of the passw
 
 
  python3 natas19.py
+<p>
 <html>
 <head>
 <!-- This stuff in the header has nothing to do with the level -->
@@ -27,6 +28,6 @@ Password: 4IwIrekcuZlA9OsjOkoUtwU6lhokCPYs</pre><div id="viewsource"><a href="in
 </div>
 </body>
 </html>
-
+</p>
 
 Password: 4IwIrekcuZlA9OsjOkoUtwU6lhokCPYs
