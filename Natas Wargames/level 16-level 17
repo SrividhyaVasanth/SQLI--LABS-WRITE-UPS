@@ -1,0 +1,21 @@
+We login with the credentials and see that there is some type of online dictionary that is searching for the word.
+From source code
+if(array_key_exists("needle", $_REQUEST)) {
+    $key = $_REQUEST["needle"];
+}
+
+if($key != "") {
+    if(preg_match('/[;|&`\'"]/',$key)) {
+        print "Input contains an illegal character!";
+    } else {
+        passthru("grep -i \"$key\" dictionary.txt");
+    }
+}
+?>
+</pre>
+I t isn't filtering any of the $ or () characters 
+
+ $(grep a /etc/natas_webpass/natas17), it doesn't return anything
+ 
+ 
+ 
