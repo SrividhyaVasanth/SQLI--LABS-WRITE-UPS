@@ -1,0 +1,14 @@
+When we login with thecredentials from the previous challenges we enter a page where we are supposed to enter a username and password, similiar to the previous challenge.
+AFter logging in with username and password as admin we get 
+
+
+This page uses mostly the same code as the previous level, but session IDs are no longer sequential...
+
+You are logged in as a regular user. Login as an admin to retrieve credentials for natas20.
+
+There is a PHPSESSIONID cookie with the value 3434312d61646d696e
+
+TH elast 10 digits fo the cookie value is forming the word admin
+a – 61, d – 64, m – 6d, i – 69, n – 6e
+
+eofm3Wsshxc5bwtVnEuGIlr7ivb9KABF
