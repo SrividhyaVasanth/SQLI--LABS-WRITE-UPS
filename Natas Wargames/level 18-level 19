@@ -52,6 +52,13 @@ if(my_session_start()) {
 ?>
 
 
+On checking the souce code we can see that the isValidID is checking if the $id is present and the debug function will print the debug content only if GET
+request is used.
+
+A random number is set as a cookie.A new request is being sent to the Natas 18 page where it will check if the random value is equal to the cookie value of the
+admin user of the Natas 18 page.
+
+
 
 
 
