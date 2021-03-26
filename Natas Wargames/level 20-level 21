@@ -126,3 +126,6 @@ it stores the php session array $_SESSION in ascending order
 the myread() fucntion will look for a default loaction to store the cookie PHPSESSID.If it doesn't exist it will return an error
 
 debug&name=admin%0Aadmin%201
+
+
+Password:IFekPyrQXftziDEsUr3x21sYuahypdgJ
