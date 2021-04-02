@@ -1,0 +1,25 @@
+On logging we see a similar application that checks the password as seen in the last challenge.
+
+ON checking the source code we see a php file
+
+<?php
+    if(array_key_exists("passwd",$_REQUEST)){
+        if(!strcmp($_REQUEST["passwd"],"<censored>")){
+            echo "<br>The credentials for the next level are:<br>";
+            echo "<pre>Username: natas25 Password: <censored></pre>";
+        }
+        else{
+            echo "<br>Wrong!<br>";
+        }
+    }
+    // morla / 10111
+?>  
+
+application compares the passwd REQUEST variable with a censored value. If the 
+ the values match, the application returns the password for the next level
+ 
+ it uses strcmp vulneribilities.
+ if the strcmp function is used to compare a string with an array, the function will return 0 i.e matches
+ on entering passwd[]it shows 'wrong' and give sus the password.
+ 
+ GHF6X7YwACaYYssHVY05cFq83hRktl4c
