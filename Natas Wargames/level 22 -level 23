@@ -1,0 +1,17 @@
+On logging in we can only check the source code
+
+if(array_key_exists("revelio", $_GET)) {
+    print "You are an admin. The credentials for the next level are:<br>";
+    print "<pre>Username: natas23\n";
+    print "Password: <censored></pre>";
+    }
+    
+    The GET requests is looking for a variable 'revelio' and if we set that we might get the password.
+    
+    
+    We use burpsuite to intecept the response and get the password
+    
+    You are an admin. The credentials for the next level are:<br><pre>Username: natas23
+Password: D0vlad33nQF0Hz2EP255TP5wSW9ZsRSE</pre>
+
+<div id="viewsource"><a href="index-source.html">View sourcecode</a>
